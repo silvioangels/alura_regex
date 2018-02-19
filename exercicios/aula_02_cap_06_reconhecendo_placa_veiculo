@@ -1,0 +1,20 @@
+Como seria a expressão regular que devemos usar para validarmos a placa de um carro?
+
+Exemplo de placa: KMG-8089
+
+Resposta:
+[A-Z]{3}\-\d{4}
+
+obs:
+
+\d : digito
+\d{n} : n significa quantidade de numeros
+\d{m,n} : m significa quantidade minima e n maxima de numeros
+\. : procura a literal . (ponto)
+\/ : procura a literal / (barra)
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes.

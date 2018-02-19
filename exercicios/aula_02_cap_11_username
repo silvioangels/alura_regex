@@ -1,0 +1,26 @@
+O username precisa ser da seguinte forma:
+
+O limite é de 10 caracteres;
+O primeiro caractere deve ser uma letra do alfabeto, não pode ser um número;
+A partir do segundo caractere podemos ter letras maiúsculas, minúsculas e números;
+
+Como deve ficar a anotação @Pattern com uma expressão regular com essas características?
+
+Resposta:
+silvio: [a-zA-Z]\w{0,9}
+resp:   [a-zA-Z][a-zA-Z0-9]{0,9}
+
+obs:
+
+\d : digito
+\d{n} : n significa quantidade de numeros
+\d{m,n} : m significa quantidade minima e n maxima de numeros
+\. : procura a literal . (ponto)
+\/ : procura a literal / (barra)
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes.
+\w : caracter ou letra

@@ -1,0 +1,29 @@
+Alvo:
+10 - Bruce, 9.5 - Miranda, 7.9    - Bob, 10 - Zimbabue, 7.5 - Bety
+
+Pattern:
+[7]\.[5-9] - \w+
+
+Resultado:
+Somente a Bety é selecionada.
+
+Pergunta: Altere a regex para que o Bob tambem seja selecionado
+
+Resposta:
+Porque o bob tem um tab.
+Para arrumar isso, necessario colocar o \s ao inves de "espaço".
+Teria que fazer essa regex: [7]\.[5-9]\s*- \w+
+
+obs:
+
+\d : digito
+\d{n} : n significa quantidade de numeros
+\d{m,n} : m significa quantidade minima e n maxima de numeros
+\. : procura a literal . (ponto)
+\/ : procura a literal / (barra)
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes.

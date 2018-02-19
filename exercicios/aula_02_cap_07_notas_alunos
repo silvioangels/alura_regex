@@ -1,0 +1,24 @@
+Separe do arquivo CSV os nomes e as notas dos alunos que tiraram de 7.2 a 7.9
+para que o professor "camarada" possa aprová-los!
+
+9.8 - Robson, 7.1 - Teresa, 4.5 - Armênio, 6.5 - Zulu, 7.7 - Stefania, 7.8, 5.0
+- Romeu, 7.2 - Pompilho, 3.1 - Reinaldo, 7.3 - Bernadete, 4.7 - Cinério
+
+
+Resposta:
+7\.[2-9]+\s\-\s[A-Z][a-z]+
+7\.[2-9]+\s\-\s\w+
+
+obs:
+
+\d : digito
+\d{n} : n significa quantidade de numeros
+\d{m,n} : m significa quantidade minima e n maxima de numeros
+\. : procura a literal . (ponto)
+\/ : procura a literal / (barra)
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes.

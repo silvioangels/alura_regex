@@ -1,0 +1,24 @@
+Temos a seguinte linha:
+
+BALEIRO GARROTE SERROTE GOLEIRO ROTEIRO
+Escreva uma expressão regular que faça match apenas com as palavras
+GARROTE, SERROTE e ROTEIRO. Não esqueça de usar nossa ferramenta para testar
+ nossas expressões regulares.
+
+Resposta:
+[A-Z]?[A-Z]?[A-Z]?ROTE[A-Z]?[A-Z]?[A-Z]?
+[A-Z]*ROTE[A-Z]*
+
+obs:
+
+\d : digito
+\d{n} : n significa quantidade de numeros
+\d{m,n} : m significa quantidade minima e n maxima de numeros
+\. : procura a literal . (ponto)
+\/ : procura a literal / (barra)
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes.
