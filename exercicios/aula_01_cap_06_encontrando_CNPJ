@@ -1,0 +1,11 @@
+-> defina a expressão regular para encontrar um CNPJ, por exemplo: 15.123.321/8883-22
+
+Resposta:
+\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}
+
+obs:
+
+\d : digito
+\d{n} : n significa quantidade de numeros
+\. : procura a literal . (ponto)
+\/ : procura a literal / (barra)

@@ -1,0 +1,15 @@
+Usando o que aprendemos até então, qual padrão podemos utilizar para encontrar o número telefônico? Por exemplo: (21) 3216-2345
+
+Dica: Os parênteses são meta-chars e precisam ser utilizados para capturar o valor literal: \(e \)
+
+
+Resposta:
+\(\d{2}\)\ \d{4}\-\d{4}
+
+obs:
+
+\d : digito
+\d{n} : n significa quantidade de numeros
+\d{m,n} : m significa quantidade minima e n maxima de numeros
+\. : procura a literal . (ponto)
+\/ : procura a literal / (barra)

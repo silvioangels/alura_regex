@@ -1,0 +1,15 @@
+Agora tente definir a regex para encontrar o CEP dentro de uma linha no nosso CSV, por exemplo:
+
+João Fulano,123.456.789-00,21 de Maio de 1993,(21) 3079-9987,Rua do Ouvidor,50,20040-030,Rio de Janeiro
+
+
+Resposta:
+\d{5}\-\d{3}
+
+obs:
+
+\d : digito
+\d{n} : n significa quantidade de numeros
+\d{m,n} : m significa quantidade minima e n maxima de numeros
+\. : procura a literal . (ponto)
+\/ : procura a literal / (barra)
