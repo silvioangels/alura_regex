@@ -1,0 +1,22 @@
+ \d{3}[-.]?\d{3}[.-]?\d{3}[.-]?\d{2}
+
+ Definir um grupo na regex em cima que devolve os dígitos verificadores.
+
+Resposta:
+silvio: \d{3}[-.]?\d{3}[.-]?\d{3}[.-]?(\d{2})
+resp:   \d{3}[-.]?\d{3}[.-]?\d{3}[.-]?(\d{2})
+
+obs:
+
+\d : digito
+\d{n} : n significa quantidade de numeros
+\d{m,n} : m significa quantidade minima e n maxima de numeros
+\. : procura a literal . (ponto)
+\/ : procura a literal / (barra)
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes.
+\w : caracter ou letra

@@ -1,0 +1,38 @@
+Nenhuma aplicação é perfeita e exceções acontecem.
+Normalmente as exceções serão guardadas dentro de um arquivo log.
+Uma tarefa comum é analisar e verificar os arquivos de log para descobrir
+possíveis problemas no sistema.
+
+Uma exceção no arquivo de log tem a seguinte cara:
+
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Queremos usar uma Regex que possa encontrar essa linha e separar em dois grupos,
+Causa e Descrição para simplificar a leitura:
+
+Causa:
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+
+Descrição:
+Communications link failure
+
+Qual seria a regex usada para termos acesso à essas duas partes do todo da exception?
+
+Resposta:
+
+resp:   (Caused[\s\w:.-]+):([\w\s]+)
+
+obs:
+
+\d : digito
+\d{n} : n significa quantidade de numeros
+\d{m,n} : m significa quantidade minima e n maxima de numeros
+\. : procura a literal . (ponto)
+\/ : procura a literal / (barra)
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes.
+\w : caracter ou letra

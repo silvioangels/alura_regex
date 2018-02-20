@@ -1,0 +1,36 @@
+Na Alura existe um filtro de permissões para habilitar alguns recursos para
+usuários da Alura ou da Caelum. A sua tarefa é criar a regex que verifica o
+email desses usuários e extrai o nome do usuário
+
+O email deve ter um @ e terminar com caelum.com.br ou alura.com.br.
+O nome do usuário (tudo antes do @) tem apenas letras minúsculas, pode ter um
+número no final e tem de 5 a 15 caracteres.
+
+Por exemplo:
+
+super.mario@caelum.com.br extrai super.mario
+donkey.kong@alura.com.br extrai donkey.kong
+bowser1@alura.com.br extrai bowser1
+
+Mais uma dica, para definir dentro de um grupo que queremos um OU
+outro usamos o caractere | (pipe). Por exemplo, selecionando alfa OU beta,
+escrevemos (alfa|beta)
+
+Resposta:
+silvio: (\w+\.?\w+)@(?:alura|caelum)+\.\w+\.\w+
+resp:   ([a-z.]{4,14}[a-z\d])@(?:caelum.com.br|alura.com.br)
+
+obs:
+
+\d : digito
+\d{n} : n significa quantidade de numeros
+\d{m,n} : m significa quantidade minima e n maxima de numeros
+\. : procura a literal . (ponto)
+\/ : procura a literal / (barra)
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes.
+\w : caracter ou letra
